@@ -30,7 +30,7 @@
     "test": "mocha --compilers coffee:coffee-script --grep Module",
     "full-test": "mocha --compilers coffee:coffee-script",
     "valgrind": "coffee -c test/usb.coffee; valgrind --leak-check=full --show-possibly-lost=no node --expose-gc --trace-gc node_modules/mocha/bin/_mocha -R spec",
-    "release-linux-ia32": "node-pre-gyp rebuild --target_arch=ia32 --target_platform=linux --runtime=electron --target=1.4.10 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp --target_arch=ia32 --target_platform=linux --runtime=electron --target=1.4.10 package && node-pre-gyp-github publish --release",
+    "release-linux-ia32": "node-pre-gyp rebuild --target_arch=ia32 --target_platform=linux --runtime=electron --target=1.4.10 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp --target_arch=ia32 --target_platform=linux --runtime=electron --target=1.4.10 package",
     "release-linux": "node-pre-gyp rebuild --target_arch=x64 --runtime=electron --target=1.4.10 --target_platform=linux --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_arch=x64 --target_platform=linux --runtime=electron --target=1.4.10",
     "release-win-ia32": "node-pre-gyp rebuild --target_arch=ia32 --target_platform=win32 --runtime=electron --target=1.4.10 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_arch=ia32 --target_platform=win32 --runtime=electron --target=1.4.10",
     "release-win": "node-pre-gyp rebuild --target_arch=x64 --target_platform=win32 --runtime=electron --target=1.4.10 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_arch=x64 --target_platform=win32 --runtime=electron --target=1.4.10",
@@ -45,8 +45,7 @@
   },
   "dependencies": {
     "nan": "^2.1.0",
-    "node-pre-gyp": "^0.6.13",
-    "node-pre-gyp-github": "^1.1.2"
+    "node-pre-gyp": "^0.6.13"
   },
   "bundledDependencies": [
     "node-pre-gyp"
