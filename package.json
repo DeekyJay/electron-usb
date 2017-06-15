@@ -41,7 +41,7 @@
     "module_name": "usb_bindings",
     "module_path": "./build/{configuration}/electron-v1.6.11-{platform}-{arch}/",
     "package_name": "electron-v1.6.11-{platform}-{arch}.tar.gz",
-    "host": "https://github.com/DeekyJay/electron-usb/releases/download/0.0.13"
+    "host": "https://github.com/DeekyJay/electron-usb/releases/download/0.0.14"
   },
   "dependencies": {
     "nan": "^2.1.0",
