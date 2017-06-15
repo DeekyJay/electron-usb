@@ -16,9 +16,9 @@
       "url": "https://github.com/marcopiraccini"
     }
   ],
-  "version": "0.0.13",
+  "version": "0.0.14",
   "engines": {
-    "electron": ">=1.4.10"
+    "electron": ">=1.6.11"
   },
   "main": "./usb",
   "repository": {
@@ -30,17 +30,17 @@
     "test": "mocha --compilers coffee:coffee-script --grep Module",
     "full-test": "mocha --compilers coffee:coffee-script",
     "valgrind": "coffee -c test/usb.coffee; valgrind --leak-check=full --show-possibly-lost=no node --expose-gc --trace-gc node_modules/mocha/bin/_mocha -R spec",
-    "release-linux-ia32": "node-pre-gyp rebuild --target_arch=ia32 --target_platform=linux --runtime=electron --target=1.4.10 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp --target_arch=ia32 --target_platform=linux --runtime=electron --target=1.4.10 package",
-    "release-linux": "node-pre-gyp rebuild --target_arch=x64 --runtime=electron --target=1.4.10 --target_platform=linux --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_arch=x64 --target_platform=linux --runtime=electron --target=1.4.10",
-    "release-win-ia32": "node-pre-gyp rebuild --target_arch=ia32 --target_platform=win32 --runtime=electron --target=1.4.10 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_arch=ia32 --target_platform=win32 --runtime=electron --target=1.4.10 --msvs_version 2015",
-    "release-win": "node-pre-gyp rebuild --target_arch=x64 --target_platform=win32 --runtime=electron --target=1.4.10 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_arch=x64 --target_platform=win32 --runtime=electron --target=1.4.10 --msvs_version 2015",
-    "release": "node-pre-gyp rebuild --runtime=electron --target=1.4.10 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --runtime=electron --target=1.4.10",
-    "release-darwin": "HOME=~/.electron-gyp node-pre-gyp rebuild --target_platform=darwin --runtime=electron --target=1.4.10 --arch=x64 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_platform=darwin --runtime=electron --target=1.4.10"
+    "release-linux-ia32": "node-pre-gyp rebuild --target_arch=ia32 --target_platform=linux --runtime=electron --target=1.6.11 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp --target_arch=ia32 --target_platform=linux --runtime=electron --target=1.6.11 package",
+    "release-linux": "node-pre-gyp rebuild --target_arch=x64 --runtime=electron --target=1.6.11 --target_platform=linux --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_arch=x64 --target_platform=linux --runtime=electron --target=1.6.11",
+    "release-win-ia32": "node-pre-gyp rebuild --target_arch=ia32 --target_platform=win32 --runtime=electron --target=1.6.11 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_arch=ia32 --target_platform=win32 --runtime=electron --target=1.6.11 --msvs_version 2015",
+    "release-win": "node-pre-gyp rebuild --target_arch=x64 --target_platform=win32 --runtime=electron --target=1.6.11 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_arch=x64 --target_platform=win32 --runtime=electron --target=1.6.11 --msvs_version 2015",
+    "release": "node-pre-gyp rebuild --runtime=electron --target=1.6.11 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --runtime=electron --target=1.6.11",
+    "release-darwin": "HOME=~/.electron-gyp node-pre-gyp rebuild --target_platform=darwin --runtime=electron --target=1.6.11 --arch=x64 --dist-url=https://atom.io/download/atom-shell && node-pre-gyp package --target_platform=darwin --runtime=electron --target=1.6.11"
   },
   "binary": {
     "module_name": "usb_bindings",
-    "module_path": "./build/{configuration}/electron-v1.4.10-{platform}-{arch}/",
-    "package_name": "electron-v1.4.10-{platform}-{arch}.tar.gz",
+    "module_path": "./build/{configuration}/electron-v1.6.11-{platform}-{arch}/",
+    "package_name": "electron-v1.6.11-{platform}-{arch}.tar.gz",
     "host": "https://github.com/DeekyJay/electron-usb/releases/download/0.0.13"
   },
   "dependencies": {
